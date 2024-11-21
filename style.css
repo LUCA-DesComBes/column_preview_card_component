@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap");
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Lexend Deca", sans-serif;
+}
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #f2f2f2;
+}
+article {
+	display: flex;
+	margin: 88px 24px;
+	flex-direction: column;
+	color: #fff;
+}
+#first-sect {
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	padding: 48px 47.5px 48px 48.5px;
+	background-color: #e28625;
+}
+#second-sect {
+	padding: 48px 47.5px 48px 48.5px;
+	background-color: #006971;
+}
+#tertiary-sect {
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+	padding: 48px 47.5px 48px 48.5px;
+	background-color: #004140;
+}
+h2 {
+	font-size: 40px;
+	font-weight: 700;
+	margin: 35px 0 25px 0;
+	font-family: "Big Shoulders Display", sans-serif;
+}
+p {
+	font-size: 15px;
+	font-weight: 300;
+	opacity: 80%;
+	width: 90%;
+	margin-bottom: 25px;
+}
+button {
+	border: none;
+	border-radius: 25px;
+	padding: 11px 31.5px 12px 31.5px;
+	background-color: #f2f2f2;
+}
+#b-o {
+	color: #e28625;
+}
+#b-c {
+	color: #006971;
+}
+#b-d {
+	color: #004140;
+}
+
+@media screen and (min-width: 321px) {
+	body {
+		height: 100vh;
+	}
+	article {
+		flex-direction: row;
+		width: 60%;
+		margin: 0;
+	}
+	p {
+		width: 90%;
+		margin-bottom: 83px;
+	}
+	#first-sect {
+		border-radius: 8px 0 0 8px;
+	}
+	#tertiary-sect {
+		border-radius: 0 8px 8px 0;
+	}
+	@keyframes moveButton {
+		0% {
+			transform: translate(0px);
+		}
+		50% {
+			transform: translate(50px);
+		}
+		100% {
+			transform: translate(0px);
+		}
+	}
+    img:hover {
+        cursor: pointer;
+        animation: moveButton 2000ms ease-in-out;
+    }
+	#b-o:hover {
+		cursor: pointer;
+		color: #fff;
+		background-color: #e28625;
+		border: 2px #fff solid;
+		transition: background-color 1.5s ease-in;
+		animation: moveButton 2000ms ease-in-out;
+	}
+	#b-c:hover {
+		cursor: pointer;
+		color: #fff;
+		background-color: #006971;
+		border: 2px #fff solid;
+		transition: background-color 1.5s ease-in;
+		animation: moveButton 2000ms ease-in-out;
+	}
+	#b-d:hover {
+		cursor: pointer;
+		color: #fff;
+		background-color: #004140;
+		border: 2px #fff solid;
+		transition: background-color 1.5s ease-in;
+		animation: moveButton 2000ms ease-in-out;
+	}
+}
